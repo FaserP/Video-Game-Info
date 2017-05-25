@@ -1,0 +1,26 @@
+#!/bin/sh
+# Create the products database and games table
+
+sqlite3 products.db "CREATE TABLE games
+    (id INTEGER PRIMARY KEY,
+     name TEXT,
+     genre TEXT,
+     price TEXT,
+     producer TEXT,
+     description TEXT);"
+
+# Insert some games
+
+sqlite3 products.db "INSERT INTO games (name, genre, price, producer, description) VALUES
+    ('GTA5', 'Action / Adventure', '£25.00', 'Rockstars',
+     'A open world action adventure game of the Grand Theft Auto franchise')";
+
+sqlite3 products.db "INSERT INTO games (name, genre, price, producer, description) VALUES
+    ('Sims 4', 'Simulation', '£30.00', 'EA',
+     'A Simulation and building game from the Sims franchise')";
+
+sqlite3 products.db "INSERT INTO games (name, genre, price, producer, description) VALUES
+    ('Battlefield 4', 'First-person Shooter', '£40.00', 'EA',
+     'A first person shoot game based on a war')";
+
+

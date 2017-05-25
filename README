@@ -1,0 +1,14 @@
+Installation
+------------
+In Linux to install this system, you must make sure your system has a command line that has access to c++. In my example I have used Terminal command line. The system must also have SQLite3 install.
+
+1. First you must type in the command line "make install"
+   - This will create a database and a bin folder.
+
+2. You must then type in the command line ./bin/server -p <port number>
+   - In my example I have used the port number 8080
+
+3. You must thne type in the command line ./bin/client -p <port number>
+   - Again I typed the port number 8080
+
+4. Finally you will have access to the GUI in the client command line. Instruction will be on the screen on how to use the system.
